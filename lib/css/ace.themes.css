@@ -1,0 +1,49 @@
+html, body {
+    min-height: 100%;
+}
+.pretty-me-active {
+    overflow: hidden;
+}
+.pretty-me-editor {
+    display: none;
+}
+.pretty-me-active .pretty-me-editor {
+    bottom:0;
+    display: block;
+    left:0;
+    position:absolute;
+    right:0;
+    top:0;
+}
+.pretty-me-active div{
+    transition: background-color 200ms linear,
+                box-shadow 200ms linear,
+                color 200ms linear,
+                opacity 200ms linear,
+                padding 200ms linear
+    }
+.pretty-me-options {
+    background-color: #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.75);
+    opacity: 0.3;
+    padding: 4px 10px 0 10px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    z-index: 2;
+}
+.pretty-me-options:hover,
+.pretty-me-options:focus {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.75);
+    opacity: 1;
+}
+.pretty-me-options label,
+.pretty-me-options p,
+.pretty-me-options select {
+    display: block;
+    font-family: 'Monaco', 'Menlo', 'Consolas', 'source-code-pro', monospace;
+    font-size: 0.8rem;
+    margin: 0 0 4px 0;
+    padding: 0;
+}
