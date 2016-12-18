@@ -1,7 +1,7 @@
 {
 	"name": "Pretty JS"
 	,"short_name":"pretty-me-js"
-	,"version": "1.1.1"
+	,"version": "1.2.3"
 	,"manifest_version": 2
 	,"description": "This extension loads js files into the great Ace editor"
 	,"icons": {
@@ -20,7 +20,7 @@
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
 	"content_scripts": [{
 		"matches": [
-          "*://*/*.js",
+          "*://*/*.js"
           ,"*://*/*.js?*"
           ,"*://*/*.json"
           ,"*://*/*.json?*"
